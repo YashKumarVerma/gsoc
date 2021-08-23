@@ -6,32 +6,41 @@ I, [Yash Kumar Verma](https://www.linkedin.com/in/yash-kumar-verma/) am a third 
 
 ## Objectives
 
-- [x] Role Based Access Control System
-  - [x] To remove the old attribute based control system.
-  - [x] To implement a role based access control system.
+- [x] Role-Based Access Control System
+  - [x] To remove the old attribute-based control system.
+  - [x] To implement a role-based access control system.
   - [x] To come up with a new structure for the routes file and migrate old routes to new formats.
   - [x] To cover all routes defined in the application under a control system without explicit declarations.
-  - [x] To provision dynamic roles in the system which can be configured / defined as per needs.
-  - [x] To load the definitons about the roles in the system via database in place of static files.
-  - [x] To create a responsive and dynamic admin panel in React to configure the rules in realtime.
-  - [x] To declare APIs that allow the admin to configure the portal in realtime.
+  - [x] To provision dynamic roles in the system which can be configured/defined as per needs.
+  - [x] To load the definitions about the roles in the system via a database in place of static files.
+  - [x] To create a responsive and dynamic admin panel in React to configure the rules in real time.
+  - [x] To declare APIs that allow the admin to configure the portal in real time.
 - [ ] Caching database calls
-  - [x] To research on a method that works consistently with all functions with minimum changegs.
+  - [x] To research a method that works consistently with all functions with minimum changes.
   - [x] To write a robust library (discussed later) to dynamically cache any given function.
-  - [x] To future proof the library by extending support for typescript if migration / upgrate happens.
+  - [x] To future proof the library by extending support for typescript if migration/upgrade happens.
   - [x] Robust testing of the caching library to ensure consistent results.
   - [ ] **Decide which functions are to be cached**
 - [x] Objectives completed which were originally not part of the proposal
-  - [x] Break the codebase into modules / services that deal with specific functionality.
-  - [x] Stream lined use of environment variables in the application.
+  - [x] Break the codebase into modules/services that deal with specific functionality.
+  - [x] Streamlined use of environment variables in the application.
   - [x] Single point configuration for databases and roles services.
-  - [x] Refactor a major part of main application.
-  - [x] Wrote documentation for parts of project that were not under scope of the proposal.
-  - [x] Established a new code style based on airbnb's guiide.
+  - [x] Refactor a major part of the main application.
+  - [x] Wrote documentation for parts of the project that were not under the scope of the proposal.
+  - [x] Established a new code style based on Airbnb's guide.
   - [x] Fixed almost all critical linting issues.
   - [x] Published a standalone library on NPM for caching that can be used in other projects as well.
+- [x] [pull request](https://github.com/camicroscope/Caracal/pull/119)
 
 ---
+
+# Architecture
+
+There has been a fundamental change in the way the application is structured. Even when I was limited on time, I have tried to club together similar functionality in form of modules or services (located in /services). This allows easy testing and a single point of contact for all operations. Earlier there was a lot of redundancy in the codebase, which is now removed as all calls are made to a single service and code is not duplicated.
+
+# Dependency
+
+In order for the cache system to work, a new dependency of redis had to be added. The changes in the deployment will be needed to include a redis container for the cache service.
 
 # Role Bases system
 
@@ -43,6 +52,7 @@ I, [Yash Kumar Verma](https://www.linkedin.com/in/yash-kumar-verma/) am a third 
 
 > Default role definitions : changes done here are hard coded into the application, and are automatically seeded into the database at runtime. This allows deploying the same codebase to multiple clusters with similar configurations, even if all are running on different databases. usecase: different branches of a pathology lab
 > ![https://i.imgur.com/oLGcB6x.png](https://i.imgur.com/oLGcB6x.png)
+> note the hierchy in the roles that are implemented. Each higher role automatically gets all rights of a lower one.
 
 > Documentation : all services written have extensive documentation that should aid developers working on the project.
 > ![https://i.imgur.com/lTBnOUj.png](https://i.imgur.com/lTBnOUj.png)
