@@ -33,6 +33,30 @@ I, [Yash Kumar Verma](https://www.linkedin.com/in/yash-kumar-verma/) am a third 
 
 ---
 
+# Role Bases system
+
+## APIS
+
+- to read roles data
+  > GET /api/roles
+  > ![https://i.imgur.com/00zSTlP.png](https://i.imgur.com/00zSTlP.png)
+- to write roles data
+  > POST /api/roles
+
+# Admin Panel
+
+> HomePage
+> ![https://i.imgur.com/WXgHA7D.png](https://i.imgur.com/WXgHA7D.png)
+
+> Page with all resources
+> ![https://i.imgur.com/qDrQ5RZ.png](https://i.imgur.com/qDrQ5RZ.png)
+
+> Interface to edit roles
+> ![https://i.imgur.com/gBafs45.png](https://i.imgur.com/gBafs45.png)
+
+> Single button to update the live configurations
+> ![https://i.imgur.com/sCzzXNg.png](https://i.imgur.com/sCzzXNg.png)
+
 # Cache System
 
 > A modern NodeJS package to cache any function with just a **single line of code** - @easy-cache
