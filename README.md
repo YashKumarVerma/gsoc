@@ -15,11 +15,12 @@ I, [Yash Kumar Verma](https://www.linkedin.com/in/yash-kumar-verma/) am a third 
   - [x] To load the definitons about the roles in the system via database in place of static files.
   - [x] To create a responsive and dynamic admin panel in React to configure the rules in realtime.
   - [x] To declare APIs that allow the admin to configure the portal in realtime.
-- [x] Caching database calls
+- [ ] Caching database calls
   - [x] To research on a method that works consistently with all functions with minimum changegs.
   - [x] To write a robust library (discussed later) to dynamically cache any given function.
   - [x] To future proof the library by extending support for typescript if migration / upgrate happens.
   - [x] Robust testing of the caching library to ensure consistent results.
+  - [ ] **Decide which functions are to be cached**
 - [x] Objectives completed which were originally not part of the proposal
   - [x] Break the codebase into modules / services that deal with specific functionality.
   - [x] Stream lined use of environment variables in the application.
