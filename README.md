@@ -35,6 +35,21 @@ I, [Yash Kumar Verma](https://www.linkedin.com/in/yash-kumar-verma/) am a third 
 
 # Role Bases system
 
+> Services Logging their details at runtime
+> ![https://i.imgur.com/WXgHA7D.png](https://i.imgur.com/WXgHA7D.png)
+
+> Role definitons
+> ![https://i.imgur.com/naJAKUf.png](https://i.imgur.com/naJAKUf.png)
+
+> Default role definitions : changes done here are hard coded into the application, and are automatically seeded into the database at runtime. This allows deploying the same codebase to multiple clusters with similar configurations, even if all are running on different databases. usecase: different branches of a pathology lab
+> ![https://i.imgur.com/oLGcB6x.png](https://i.imgur.com/oLGcB6x.png)
+
+> Documentation : all services written have extensive documentation that should aid developers working on the project.
+> ![https://i.imgur.com/lTBnOUj.png](https://i.imgur.com/lTBnOUj.png)
+
+> Middleware: since the routes are binded to the application during runtime based on the configurations defined in routes.json, a middleware is used to enforce the rights access.
+> ![https://i.imgur.com/gFnieXr.png](https://i.imgur.com/gFnieXr.png)
+
 ## APIS
 
 - to read roles data
@@ -42,11 +57,14 @@ I, [Yash Kumar Verma](https://www.linkedin.com/in/yash-kumar-verma/) am a third 
   > ![https://i.imgur.com/00zSTlP.png](https://i.imgur.com/00zSTlP.png)
 - to write roles data
   > POST /api/roles
+  > ![https://i.imgur.com/iycGiIu.png](https://i.imgur.com/iycGiIu.png)
 
 # Admin Panel
 
 > HomePage
-> ![https://i.imgur.com/WXgHA7D.png](https://i.imgur.com/WXgHA7D.png)
+
+> HomePage
+> ![https://i.imgur.com/xwhca6p.png](https://i.imgur.com/xwhca6p.png)
 
 > Page with all resources
 > ![https://i.imgur.com/qDrQ5RZ.png](https://i.imgur.com/qDrQ5RZ.png)
