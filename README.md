@@ -30,7 +30,9 @@ I, [Yash Kumar Verma](https://www.linkedin.com/in/yash-kumar-verma/) am a third 
   - [x] Established a new code style based on Airbnb's guide.
   - [x] Fixed almost all critical linting issues.
   - [x] Published a standalone library on NPM for caching that can be used in other projects as well.
-- [x] [pull request](https://github.com/camicroscope/Caracal/pull/119)
+- [x] [pull request for roles service](https://github.com/camicroscope/Caracal/pull/119)
+- [x] [NPM package for cache - easy-cache](https://github.com/YashKumarVerma/easy-cache)
+- [ ] [YashKumarVerma/camicroscope-admin](https://github.com/YashKumarVerma/camicroscope-admin) to be transferred to camicroscope
 
 ---
 
@@ -71,10 +73,10 @@ In order for the cache system to work, a new dependency of redis had to be added
 
 # Admin Panel
 
-> HomePage
+- [YashKumarVerma/camicroscope-admin](https://github.com/YashKumarVerma/camicroscope-admin) : to be transferred to **[@caMicroScope](https://github.com/camicroscope)**
 
-> HomePage
-> ![https://i.imgur.com/xwhca6p.png](https://i.imgur.com/xwhca6p.png)
+  > HomePage
+  > ![https://i.imgur.com/xwhca6p.png](https://i.imgur.com/xwhca6p.png)
 
 > Page with all resources
 > ![https://i.imgur.com/qDrQ5RZ.png](https://i.imgur.com/qDrQ5RZ.png)
